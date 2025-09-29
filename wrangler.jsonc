@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "email-with-resend",
+	"name": "email-with-send",
 	"main": "src/index.js",
 	"compatibility_date": "2025-09-27",
 	"observability": {
