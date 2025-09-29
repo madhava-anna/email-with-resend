@@ -3,7 +3,8 @@ import { Resend } from "resend";
 export default {
   async fetch(request, env, ctx) {
     const resend = new Resend(env.RESEND_API_KEY);
-	const req = await request.json()
+	console.log("Request: "+request);   
+	const req = await request.json();
     const { data, error } = await resend.emails.send({
       from: "admin@innosys.ai",
       to: "contact@innosys.ai",
