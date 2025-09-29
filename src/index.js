@@ -8,7 +8,7 @@ export default {
     const { data, error } = await resend.emails.send({
       from: "admin@innosys.ai",
       to: "contact@innosys.ai",
-      subject: req["name"] + " from "+request["company"],
+      subject: req["name"] + " from "+req["company"],
       html: req["message"] + " \n" + req["email"],
     });
 
