@@ -5,10 +5,10 @@ export default {
     const resend = new Resend(env.RESEND_API_KEY);
 	const req = await request.json()
     const { data, error } = await resend.emails.send({
-      from: req["email"],
+      from: "admin@innosys.ai",
       to: "contact@innosys.ai",
       subject: req["name"] + " from "+request["company"],
-      html: req["message"],
+      html: req["message"] + " \n" + req["email"],
     });
 
     return Response.json({ data, error });
