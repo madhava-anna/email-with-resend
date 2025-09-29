@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 
 export default {
-  async fetch(request) {
+  async fetch(request, env, ctx) {
     const corsHeaders = {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
