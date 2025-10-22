@@ -14,9 +14,9 @@ export default {
 		console.log("Request: "+request);   
 		const req = await request.json();
 		const { data, error } = await resend.emails.send({
-			from: "admin@innosys.ai",
-			to: "contact@innosys.ai",
-			subject: req["name"] + " from "+req["company"],
+			from: "contact@palmtreewomen.com",
+			to: "contact@palmtreewomen.com",
+			subject: req["name"],
 			html: req["message"] + " \n" + req["email"],
 			});
       var response = Response.json({ data, error });
