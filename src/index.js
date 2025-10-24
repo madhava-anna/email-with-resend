@@ -17,7 +17,7 @@ export default {
 			from: "contact@palmtreewomen.com",
 			to: "contact@palmtreewomen.com",
 			subject: req["name"],
-			html: req["message"] + " \n" + req["email"],
+			html: req,
 			});
       var response = Response.json({ data, error });
 
