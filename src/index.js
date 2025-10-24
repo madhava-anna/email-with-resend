@@ -16,7 +16,7 @@ export default {
 		const { data, error } = await resend.emails.send({
 			from: "contact@palmtreewomen.com",
 			to: "contact@palmtreewomen.com",
-			subject: req["name"],
+			subject: req["subject"],
 			html: JSON.stringify(req),
 			});
       var response = Response.json({ data, error });
